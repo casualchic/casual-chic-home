@@ -57,19 +57,9 @@ const priceToNum = (s: string) => Number(s.replace(/[^0-9.]/g, "")) || 0;
 
 export function StoreProvider({ children }: { children: ReactNode }) {
   const [route, setRoute] = useState<Route>({ name: "home" });
-  const [cart, setCart] = useState<CartItem[]>([
-    {
-      slug: "hudson-mug",
-      name: "Hudson Stoneware Mug",
-      variant: "Cream",
-      price: "$32",
-      unitPrice: 32,
-      image: "https://images.unsplash.com/photo-1619911013257-8f1fbc919fc9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=85&w=400",
-      qty: 2,
-    },
-  ]);
+  const [cart, setCart] = useState<CartItem[]>([]);
   const [cartOpen, setCartOpen] = useState(false);
-  const [wishlist, setWishlist] = useState<string[]>(["marin-sofa", "loma-pendant"]);
+  const [wishlist, setWishlist] = useState<string[]>([]);
   const [wishlistOpen, setWishlistOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [toasts, setToasts] = useState<Toast[]>([]);
