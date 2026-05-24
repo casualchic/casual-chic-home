@@ -1,3 +1,5 @@
-This Figma Make file includes components from [shadcn/ui](https://ui.shadcn.com/) used under [MIT license](https://github.com/shadcn-ui/ui/blob/main/LICENSE.md).
+# Attributions
 
-This Figma Make file includes photos from [Unsplash](https://unsplash.com) used under [license](https://unsplash.com/license).
+This repo includes placeholder product and editorial photography from [Unsplash](https://unsplash.com) under the [Unsplash License](https://unsplash.com/license). These URLs are temporary and will be replaced with licensed or original photography before launch.
+
+The Figma Make export originally included components from [shadcn/ui](https://ui.shadcn.com/) (MIT). The unused `src/app/components/ui/` directory was removed when pruning unused dependencies; if shadcn components are reintroduced during the storefront port, that attribution applies again.
