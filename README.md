@@ -19,7 +19,7 @@ npm run build
 
 ## Repo layout
 
-```
+```text
 src/
 ├── main.tsx                        # entry
 ├── app/

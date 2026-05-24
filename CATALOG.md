@@ -23,7 +23,7 @@ From [src/app/components/header.tsx:25-107](src/app/components/header.tsx). Thes
 | Outdoor | `outdoor` | Outdoor furniture & accessories |
 | Lighting | `lighting` | Pendants, lamps, sconces |
 | Decor | `decor` | Vases, candles, accents |
-| Sale | `sale` | Smart collection (price < salePrice) — not a category |
+| Sale | `sale` | Smart collection (`salePrice < price`) — not a category |
 
 Subcategories used in current data: Sofas, Chairs, Coffee Tables, Accents, Throws, Rugs, Bedding. Add as Medusa sub-categories under the relevant parent.
 

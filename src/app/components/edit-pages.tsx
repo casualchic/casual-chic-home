@@ -3,7 +3,7 @@ import { ArrowLeft, Clock } from "lucide-react";
 import { useStore } from "../store";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { productBySlug, products } from "../data";
-import { articles } from "../articles";
+import { articles, articleBySlug } from "../articles";
 export { articles } from "../articles";
 
 const categories = ["All", "How-To", "Inside the Home", "Maker Stories", "Seasonal"] as const;
@@ -81,7 +81,7 @@ export function EditHub() {
 
 export function EditArticle({ slug }: { slug: string }) {
   const { navigate } = useStore();
-  const article = articles.find((a) => a.slug === slug);
+  const article = articleBySlug(slug);
   if (!article) {
     return (
       <div className="mx-auto max-w-[680px] px-6 py-24 text-center">
